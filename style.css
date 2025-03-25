@@ -1,0 +1,270 @@
+body,
+ul,
+li,
+a,
+address {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    color: #C8C8C8;
+    font-style: normal;
+    word-break: keep-all;
+}
+
+.container {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://song0331.github.io/Netflix/images/background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 1630px;
+}
+
+header {
+    width: 100%;
+    height: 8%;
+    /* background-color: blue; */
+
+    .header-inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 40px 5%;
+    }
+
+    .logo {
+        display: inline-block;
+        background-image: url('images/Logo.svg');
+        /* 로고 크기가 더 크거나 작으면 이거 넣어줘야 함 */
+        /* background-repeat: no-repeat; */
+        /* background-size: contain; */
+        width: 140px;
+        height: 38px;
+    }
+
+    .btn-wrap {
+        display: flex;
+        column-gap: 10px;
+    }
+
+    .btn {
+        width: 70px;
+        height: 40px;
+        background-color: #e50914;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        text-align: center;
+        font-family: 'Spoqa Han Sans Neo';
+        font-weight: 500;
+        cursor: pointer;
+    }
+
+    button:hover {
+        background-color: #B70710;
+    }
+
+    select {
+        cursor: pointer;
+        width: 113px;
+        height: 40px;
+        background-color: black;
+        color: #757575;
+        text-align: center;
+        border-radius: 4px;
+    }
+}
+
+main {
+    width: 100%;
+    height: 42%;
+    /* background-color: rgb(156, 156, 252); */
+
+    .promotion-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        row-gap: 28px;
+        margin-top: 57px;
+
+        li {
+            color: white;
+            text-align: center;
+            word-break: keep-all;
+            font-family: 'Spoqa Han Sans Neo';
+        }
+
+        li:nth-of-type(1) {
+            width: 600px;
+            font-size: 60px;
+            font-weight: 700;
+            line-height: 72px;
+        }
+
+        li:nth-of-type(2) {
+            font-size: 20px;
+            font-weight: 500;
+            line-height: 30px;
+        }
+
+        li:nth-of-type(3) {
+            width: 350px;
+            font-weight: 300;
+            line-height: 24px;
+        }
+
+        .input-email-wrapper {
+            display: flex;
+
+            input {
+                box-sizing: border-box;
+                width: 540px;
+                height: 60px;
+                line-height: 100px;
+                padding-left: 20px;
+                border: none;
+
+            }
+
+            .btn-free {
+                display: flex;
+                width: 210px;
+                height: 60px;
+                background-color: #e50914;
+                color: white;
+                justify-content: center;
+                align-items: center;
+                border: none;
+                cursor: pointer;
+                column-gap: 10px;
+                font-family: 'Spoqa Han Sans Neo';
+                font-size: 22px;
+            }
+
+            .btn-free:hover {
+                background-color: #B70710;
+            }
+        }
+    }
+}
+
+.divider {
+    width: 100%;
+    height: 10%;
+    background: linear-gradient(to top, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.75) 25%, rgba(0, 0, 0, 0.5) 50%, rgba(0, 0, 0, 0.25) 75%, rgba(0, 0, 0, 0) 100%);
+}
+
+footer {
+    width: 100%;
+    height: 40%;
+    background-color: black;
+    color: #acacac;
+    font-family: 'Spoqa Han Sans Neo';
+    padding: 0 5%;
+    padding-top: 46px;
+
+    .ask-wrap {
+        display: flex;
+        column-gap: 5px;
+
+        .ask {
+            font-size: 20px;
+            font-weight: 700;
+            line-height: 30px;
+        }
+    }
+
+    .footer-nav {
+        display: grid;
+        grid-template-columns: repeat(4, 25%);
+        grid-template-rows: auto;
+        margin: 50px 0;
+        row-gap: 16px;
+    }
+
+    select {
+        cursor: pointer;
+        width: 113px;
+        height: 40px;
+        background-color: black;
+        color: #757575;
+        text-align: center;
+        border-radius: 4px;
+    }
+
+    h3 {
+        font-size: 22px;
+        font-weight: 500;
+        line-height: 26px;
+        margin-top: 50px;
+    }
+
+    address {
+        font-weight: 400;
+        line-height: 24px;
+    }
+
+}
+
+@media(max-width: 768px) {
+    .header {
+        background-color: transparent;
+        height: 5%;
+    }
+
+    .header-inner {
+        padding: 20px 4%;
+    }
+
+    .logo {
+        width: 80px;
+        height: 22px;
+    }
+
+    .btn-wrap {
+        column-gap: 5px;
+    }
+
+    .select-lang {
+        height: 30px;
+    }
+
+    .btn {
+        width: 60px;
+        height: 30px;
+        font-size: 12px;
+    }
+
+    .main {
+        height: 45%;
+    }
+
+    .promotion-container li:nth-of-type(1) {
+        width: 339px;
+        font-size: 34px;
+        line-height: 40px;
+    }
+
+    .promotion-container li:nth-of-type(2) {
+        width: 259px;
+        font-size: 18px;
+        line-height: 27px;
+    }
+
+    .promotion-container li:nth-of-type(3) {
+        width: 264px;
+        font-size: 14px;
+        line-height: 21px;
+    }
+
+    .input-email-wrapper {
+        display: inline-block;
+    }
+
+    .promotion-container li:nth-of-type(5) {
+        width: 339px;
+        font-size: 12px;
+        line-height: 18px;
+    }
+}
